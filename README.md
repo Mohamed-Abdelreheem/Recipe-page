@@ -24,8 +24,8 @@ This is a recipe page for an Omelette contains preparation time, ingredients and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: (http://127.0.0.1:5500/index.html)
+- Solution URL: (https://github.com/Mohamed-Abdelreheem/Recipe-page)
+- Live Site URL: (https://mohamed-abdelreheem.github.io/Recipe-page/)
 
 
 ### Built with
