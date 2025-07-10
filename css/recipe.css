@@ -1,0 +1,215 @@
+/* Global Styles */
+:root{
+  --black:hsl(24, 5%, 18%);
+  --grey:hsl(30, 10%, 34%);
+  --brown:hsl(14, 45%, 36%);
+  --violet:hsl(332, 51%, 32%);
+  --white:hsl(0, 0%, 100%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: hsl(332, 66%, 94%);
+}
+.container{
+  width: 50%;
+  margin:50px auto;
+  background-color: var(--white);
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px 0;
+}
+@media(max-width:375px){
+  .container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+hr{
+  width: 90%;
+  margin: 1.5rem 0 0 1.5rem ;
+  color: var(--grey);
+  opacity: 0.2;
+}
+/* Start Page Style */
+.img{
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  background-image: url(../assets/images/image-omelette.jpeg);
+  background-size: cover;
+  padding: 10px auto;
+  border-radius: 10px;
+
+}
+@media (max-width:375px){
+  .img{
+    width: 100%;
+    border-radius: 0;
+    height: 180px;
+
+  }
+}
+@media (min-width:376px) and (max-width:1200px){
+  .img{
+    min-height: 180px;
+    max-height: 280px;
+  }
+}
+.img + p{
+  font-size: 32px;
+  text-transform: capitalize;
+  font-family: "Young Serif";
+  margin: 2rem 0 0 2rem;
+  color: var(--black);
+}
+.img + p + p{
+  font-size: 15px;
+  color: var(--grey);
+  margin: 1rem 2rem 0 ;
+}
+@media (max-width:375px){
+  .img + p{
+    margin: 1rem 1.5rem 0 ;
+  }
+  .img + p + p{
+    font-size: 15px;
+    margin: 1rem 2.5rem 0;
+  }
+}
+ul.preparation{
+  list-style: square;
+  list-style-image: linear-gradient(to right , var(--violet) 100%);
+  margin: 3rem 0 0 4rem;
+  color: var(--violet);
+  font-weight: 800;
+  font-size: 22px;
+  
+}
+@media (max-width:375px){
+  ul{
+    margin-left: 3rem;
+    font-size:16px;
+  }
+}
+ul.preparation li {
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: 15px;
+  color: var(--grey);
+  font-weight: 400;
+}
+ul.preparation li span{
+  margin: 0 0 0 2rem;
+  font-weight: 700;
+}
+ul.ingredients{
+  list-style: square;
+  list-style-image: linear-gradient(to right , var(--brown) 100%);
+  margin: 3rem 0 0 2rem;
+  color: var(--brown);
+  font-weight: 800;
+  font-size: 28px;
+  font-family: "Young Serif";
+}
+ul.ingredients li{
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: 15px;
+  color: var(--grey);
+  font-weight: 400;
+  padding: 0 2rem;
+}
+ul.ingredients li span{
+  margin: 0 0 0 2rem;
+  color: var(--black);
+}
+@media (max-width:375px){
+  ul{
+    font-size:16px;
+  }
+  ul.ingredients li{
+    margin: 1.5rem 0 0 1.5rem;
+  }
+}
+ol.instructions{
+  margin: 1.5rem 0 0 2rem;
+  color: var(--brown);
+  font-weight: 800;
+  font-size: 28px;
+  font-family: "Young Serif";
+  
+}
+ol.instructions li{
+  font-family: Outfit;
+  margin: 1.5rem 0 0 1.5rem;
+  font-size: 15px;
+  
+  font-weight: 400;
+  padding: 0 2rem;
+}
+ol.instructions li div{
+  color: var(--grey);
+}
+ol.instructions li span{
+  font-weight: 700;
+}
+@media (max-width:375px){
+  ol.instructions{
+    font-size:16px;
+  }
+  ol.instructions li{
+    margin: 1.5rem 0 0 1.5rem;
+  }
+}
+.nutrition p:first-child{
+  margin: 3rem 0 0 2rem;
+  color: var(--brown);
+  font-weight: 800;
+  font-size: 28px;
+  font-family: "Young Serif";
+}
+.nutrition p:nth-child(2){
+  font-size: 15px;
+  color: var(--grey);
+  margin: 1rem 2rem 0 ;
+}
+@media (max-width:375px){
+  .nutrition p:first-child{
+    font-size:16px;
+  }
+  .nutrition p:nth-child(2){
+    margin: 1.5rem 2rem ;
+    padding-right: 2rem;
+  }
+}
+table{
+  width: 80%;
+  margin: 2rem auto 0;
+  color: var(--grey);
+  
+}
+table tr{
+  position: relative;
+}
+table tr::after {
+  content: "" ;
+  width: 110%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--grey);
+  opacity: 0.2;
+  left: -5%;
+}
+td.number{
+  color: var(--brown);
+  font-weight: 700;
+}
+/* End Page Style */
